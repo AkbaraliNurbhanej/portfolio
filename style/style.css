@@ -6,6 +6,9 @@ body.dark-mode {
 body.dark-mode a{
     color: #000 !important;
 }
+body.dark-mode p{
+    color: #000 !important;
+}
 body.dark-mode h1,
 body.dark-mode h4{
     color: #000 !important; 
@@ -13,6 +16,31 @@ body.dark-mode h4{
 body.dark-mode i{
     color: #000 !important; 
 }
+
+body.dark-mode #experience div:hover{
+background-color: aliceblue;
+}
+
+body.dark-mode #poject .porject-detail:hover{
+background-color: aliceblue;
+}
+body.dark-mode #poject .img i{
+    color: #cc7ede !important;
+}
+body.dark-mode #poject .img :hover{
+    background-color:rgb(202, 225, 246) !important;
+}
+
+body.dark-mode #footer address{
+color: gray;
+}
+body.dark-mode #mediya .fex-box{
+background-color: #fff;
+}
+body.dark-mode #mediya .fex-box a:hover{
+color:#fff !important;
+}
+
 
 
 
@@ -33,8 +61,11 @@ h6,
 p{
     color: #fff;
 }
-H3,span{
+h3{
     color: #cc7ede;
+}
+span{
+    color: #cc7ede !important;
 }
 
 #header{
