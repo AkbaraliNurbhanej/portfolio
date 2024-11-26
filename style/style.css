@@ -1,5 +1,5 @@
 body.dark-mode {
-    background-color: #fff;
+    background-color: #fff !important;
     color: #000 !important;
 }
 
@@ -17,9 +17,6 @@ body.dark-mode i{
     color: #000 !important; 
 }
 
-body.dark-mode #experience div:hover{
-background-color: aliceblue;
-}
 
 body.dark-mode #poject .porject-detail:hover{
 background-color: aliceblue;
@@ -53,16 +50,16 @@ html{
 }
 
 body{
-    background-color:rgb(17 24 39 );
+    background-color:rgb(17 24 39 )!important;
 }
 h1,
 h4,
 h6,
 p{
-    color: #fff;
+    color: #fff !important;
 }
 h3{
-    color: #cc7ede;
+    color: #cc7ede !important;
 }
 span{
     color: #cc7ede !important;
@@ -175,7 +172,7 @@ background-color: rgb(55 65 81); ;
 }
 
 #info{
-    width: 25%;
+    /* width: 25%; */
 }
 
 #info span{
@@ -183,62 +180,51 @@ background-color: rgb(55 65 81); ;
 font-weight: 600;
 }
 
-#info p,
-#experience p{
+#info p{
     font-size: 15px;
     padding-bottom: 20px;
 }
 
 #experience{
-    width: 50%;
-}
-
-#experience h3{
-    padding-bottom: 30px;
-
-}
-#experience div{
-    padding: 10px;
-    transition: transform .2s;
-    -webkit-transition: transform .2s;
-    -moz-transition: transform .2s;
-    -ms-transition: transform .2s;
-    -o-transition: transform .2s;
-}
-
-#experience div:hover{
+    /* width: 50%; */
+    padding: 15px;
     border-radius: 20px;
-    background-color:rgb(31, 41, 55) ;
+    transition:transform .2s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#experience:hover{
+    background-color: #8da2fb1a;
     -ms-transform: scale(1.1);
-    /*IE9*/-webkit-transform: scale(1.1);
-    /*Safari3-8*/transform: scale(1.1);
+    IE9-webkit-transform: scale(1.1);
+    Safari3-8transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
 
-#experience .progress a{
-    color:rgb(180 177 254);
+#experience .experience-buttons a{
+    padding-left: 20px;
     text-decoration: none;
+    color:rgb(180 190 254);
 }
 
-#experience .progress i{
+#experience .button {
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding-top: 20px
+}
+
+#btn{
     font-size: 10px;
-    padding-bottom: 2px;
-}
-
-#experience div .progress{
-    padding-top: 10px;
-    transition:transform .2s;
-    -webkit-transition:transform .2s;
-    -moz-transition:transform .2s;
-    -ms-transition:transform .2s;
-    -o-transition:transform .2s;
-}
-
-#experience  .buttons a{
-    background-color: #8da2fb1a;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    /* color:rgb(180 190 254); */
+    text-decoration: none;
+    background-color:  #8da2fb1a;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -246,32 +232,16 @@ font-weight: 600;
     -o-border-radius: 20px;
 }
 
-#experience  .buttons {
-padding-top: 30px;
-}
-
-#experience  .progress:hover,
-#experience  .buttons:hover{
-    border-radius: 20px;
-    background-color:rgb(31, 41, 55) ;
-    -ms-transform: scale(1.01);
-    /*IE9*/-webkit-transform: scale(1.01);
-    /*Safari3-8*/transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -o-transform: scale(1.01);
-}
-
 #poject{
-    display: block;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 50px;
 }
 #poject .cara i,
 #poject .bca a{
     text-decoration: none;
-    color:rgb(180 177 254) ;
+    color:rgb(180 177 254);
 }
 
 #poject #shop{
@@ -295,13 +265,14 @@ padding-bottom: 20px
 }
 
 #poject .img a:hover{
-    /*color:#8da2fb1a ;
-    */border-radius:10px ;
+    color:#8da2fb1a ;
+    border-radius:10px ;
     background-color:#8da2fb1a;
     padding:10px 30px ;
 }
 
 #poject .cara{
+    width: 70%;
     flex-direction: column;
     padding: 10px 50px 30px 10px;
     background-color: #8da2fb1a;
@@ -318,9 +289,7 @@ padding-bottom: 20px
     justify-content: space-around;
 }
 
-#poject .demo{
-    width: 50%;
-}
+
 
 
 #poject .demo h3{
@@ -371,12 +340,12 @@ color: rgb(180 177 254);
 #footer .p{
     color: #fff;
 font-size: 20px;
-width: 80%;
+width: 60%;
 font-weight: 600;
 }
 
 #footer .p:hover{
-    color: rgb(180 177 254);
+    color: rgb(180 177 254) !important;
 }
 
 #footer .hov{
@@ -481,7 +450,7 @@ font-weight: 600;
 #mediya{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -523,4 +492,106 @@ padding-bottom: 20px;
 }
 #mediya .fex-box a:hover{
     background-color: rgb(55 65 81);
+}
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+
+
+@media (max-width:799px) {
+
+    #name h1{
+        font-size: 85px;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0%;
+        right:-310px ;
+        height: 50vh;
+        width: 300px;
+        background-color:#8e65a9 ;
+        box-shadow: 0 40px 60px rgba(246, 246, 246, 0.1);
+        padding: 80px 0 0 10px;
+        transition:0.3s ease ;
+        -webkit-transition:0.3s ease ;
+        -moz-transition:0.3s ease ;
+        -ms-transition:0.3s ease ;
+        -o-transition:0.3s ease ;
+}
+
+    #navbar.active {
+        right:0px;
+    }
+
+    #header li {
+    margin-bottom: 25px;
+    }
+
+    #mobile{
+        font-size: 25px;
+        display: flex;
+    }
+
+    #themeToggle{
+        font-size: 24px;
+    }
+    #bar{
+        padding-left: 20px;
+        font-size: 24px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width:399px) {
+
+#name h1{
+    font-size: 40px;
+}
+#name h4{
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+    #info{
+        width: 100%;
+    }
+
+    #experience{
+        width: 100%;
+    }
+
+#poject .cara{
+    width: 100%;
+}
+
+    #poject .demo{
+        width: 100%;
+        padding-top: 90px;
+    }
+
+    #contact-head{
+        font-size: 12px;
+    }
 }
