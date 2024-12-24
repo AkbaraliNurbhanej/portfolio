@@ -9,6 +9,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="icon" href="/img/img round.png">
+
+    <style>
+        #multi-language {
+    display: inline-block;
+    animation: languageChange 3s ease infinite;
+}
+
+@keyframes languageChange {
+    0% { content: "Hi!"; }
+    25% { content: "Hola!"; }  /* Spanish */
+    50% { content: "Bonjour!"; }  /* French */
+    75% { content: "Hallo!"; }  /* German */
+    100% { content: "Hi!"; }  /* Back to English */
+}
+
+    </style>
 </head>
 
 <body>
@@ -29,7 +45,7 @@
             </div>
         </section>
 
-
+<!-- 
     <section id="name">
         <div>
             <h1><span>Hi!</span> I'm Akbarali N.</h1>
@@ -40,8 +56,36 @@
         <div id="button">
             <a href="./contact/contact.html">👋 Connect with me</a>
         </div>
-    </section>
+    </section> -->
 
+    <section id="name">
+        <div>
+            <h1>
+                <!-- <span id="multi-language">Hi!</span> -->
+                <h1><span id="multi-language">Hi!</span> I'm Akbarali N.</h1>
+            </h1>
+        </div>
+        <div>
+            <h4>Technologist with a passion for building.</h4>
+        </div>
+        <div id="button">
+            <a href="./contact/contact.html">👋 Connect with me</a>
+        </div>
+    </section>
+    
+
+    <script>
+      const languages = ["Hi!", "Hola!", "Bonjour!", "Hallo!"];
+let index = 0;
+
+const span = document.getElementById('multi-language');
+
+setInterval(() => {
+    index = (index + 1) % languages.length; // Loop through the languages
+    span.textContent = languages[index]; // Update the text
+}, 2000); // Change every 3 seconds
+ // Change every 0.3 seconds
+    </script>
     <!-- <script src="/js/manu.js"></script> -->
     <script src="./js/dark.js"></script>
     <script src="./js/app.js"></script>
