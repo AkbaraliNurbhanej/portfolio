@@ -250,11 +250,15 @@ padding-bottom: 20px
 #poject .img {
     padding-left: 35px;
 }
+#poject .img span{
+    padding-left: 10px;
+}
 #poject .img a{
     padding:10px 30px 
 }
 
 #poject .img i{
+    padding: 10px;
     color: #fff;
     border-radius: 20px;
     -webkit-border-radius: 20px;
