@@ -11,7 +11,7 @@
 </head>
 <body id="scroll">
     <section id="header">
-        <a href="../img/photo_6210886751900254640_y.jpg"><img src="/img/photo_6210886751900254640_y.jpg" alt="" class="logo"></a>
+        <img src="/img/photo_6210886751900254640_y.jpg" alt="" class="logo"></a>
         <div>
             <ul id="navbar">
                 <i id="themeToggle" class="fa-solid fa-sun" style="color: #fff;""></i>
@@ -33,7 +33,7 @@
             <div class="col">
                 <div id="info">
                     <div>
-                        <h4>Hi,my name is</h4>
+                        <h4><span  id="multi-language" id="hello">Hi</span>,my name is</h4>
                         <span>Akbarali</span>
                         <p> Bachelor of Computer Applications student</p>
                         <p> Web development enthusiast passionate about learning and building beautiful, responsive websites. My journey in web development started with mastering the basics of HTML and CSS, gradually advancing to JavaScript and Bootstrap. Along the way, I’ve enjoyed experimenting with layouts, animations, and interactive features to create user-friendly experiences.
@@ -141,6 +141,20 @@
 <section>
     <div class="bouncing-box"></div>
 </section>
+
+
+<script>
+    const languages =  ["Hi!", "Hola!", "Bonjour!", "Hello!", "Ciao!", "नमस्ते!", "こんにちは!"];
+let index = 0;
+
+const span = document.getElementById('multi-language');
+
+setInterval(() => {
+    index = (index + 1) % languages.length; // Loop through the languages
+    span.textContent = languages[index]; // Update the text
+}, 2000); // Change every 3 seconds
+ // Change every 0.3 seconds
+    </script>
 
 <script src="./js/about.js"></script>
 <script src="/js/app.js"></script>
