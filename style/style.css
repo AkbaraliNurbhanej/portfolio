@@ -288,6 +288,10 @@ padding-bottom: 20px
     padding:10px 30px ;
 }
 
+#poject .img a img{
+    width: 20PX;
+}
+
 #poject .cara{
     width: 70%;
     flex-direction: column;
