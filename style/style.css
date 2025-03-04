@@ -336,6 +336,9 @@ padding-bottom: 20px
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.education a{
+    text-decoration: none;
+}
 
 #footer .education i{
     color:rgb(180 177 254);
