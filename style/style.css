@@ -185,8 +185,8 @@ background-color: rgb(55 65 81); ;
     justify-content: space-around;
 }
 
-#info span{
-    /* font-size: 50px; */
+#info #name1{
+    font-size: 50px;
 font-weight: 600;
 }
 
