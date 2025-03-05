@@ -34,10 +34,13 @@ color: gray;
 body.dark-mode #mediya .fex-box{
 background-color: #eed8f3;
 }
-
-body.dark-mode H6{
-color:#121010 !important;
+body.dark-mode #mediya .fex-box a:hover{
+color:#ffffff !important;
 }
+body.dark-mode #mediya .fex-box h6{
+color:#ffcbf6 !important;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
 }
