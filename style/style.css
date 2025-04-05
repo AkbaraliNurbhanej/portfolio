@@ -81,13 +81,7 @@ h3{
 span{
     color: #cc7ede !important;
 }
-/
-  /* Hide loader with fade-out effect */
-  .hide-loader {
-    opacity: 0;
-    transition: opacity 0.8s ease-out;
-    pointer-events: none;
-  }
+
 
 
 #header{
@@ -419,6 +413,9 @@ font-weight: 600;
 
 #footer .skill-greed{
 padding: 0% ;
+display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #footer .skills .pen{
