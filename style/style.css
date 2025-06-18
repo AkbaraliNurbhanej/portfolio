@@ -42,8 +42,13 @@ color:#ffcbf6 !important;
 }
 body.dark-mode #first-loding #loading-screen  {
 background-color:#ffff !important;
+}
 
-
+body.dark-mode .cursor {
+    border: 5px solid  #cc7ede !important ;
+}
+body.dark-mode .expand {
+    border: 1px solid yellow !important ;
 }
 
 ::-webkit-scrollbar{
@@ -72,6 +77,11 @@ html{
 
 body{
     background-color:rgb(17 24 39 )!important;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #222;
+    font-family: Helvetica, sans-serif;
+    cursor: none;
 }
 #first-loding #loading-screen {
     position: fixed;
@@ -799,4 +809,53 @@ padding-bottom: 20px;
 
 #social i{
     margin: -6PX;
+}
+
+/* cursor style  */
+.cursor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 111;
+    border: 5px solid #fff;
+    transition: all 0.2s ease-out;
+    animation: moveCursor1 .2s infinite alternate;
+}
+
+.expand {
+    background: transparent;
+    animation: moveCursor2 .5s forwards;
+    border: 1px solid yellow;
+}
+
+@keyframes moveCursor1 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.8);
+    }
+}
+
+@keyframes moveCursor2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2.5);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
 }
